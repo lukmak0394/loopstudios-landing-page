@@ -536,4 +536,75 @@ header .main-heading {
     width: 100%;
   }
 }
+
+@media screen and (max-width: 767px) {
+  header {
+    background-image: url("../images/mobile/image-hero.jpg");
+  }
+}
+
+.about {
+  position: relative;
+  max-width: 1140px;
+  margin: auto;
+}
+
+.about .image-wrapper {
+  background-image: url("../images/desktop/image-interactive.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+  width: 731px;
+}
+
+.about .content-wrapper {
+  position: absolute;
+  bottom: 50px;
+  right: 0px;
+  width: 541px;
+  z-index: 2;
+  background-color: white;
+  padding-top: 40px;
+  padding-left: 90px;
+}
+
+.about .content-wrapper .about-heading {
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: uppercase;
+  font-size: 3.2rem;
+  font-weight: 300;
+}
+
+.about .content-wrapper .about-content {
+  line-height: 25px;
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 992px) {
+  .about .container {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .about .image-wrapper {
+    background-image: url("../images/mobile/image-interactive.jpg");
+    width: 100%;
+  }
+  .about .content-wrapper {
+    position: unset;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    margin-top: 30px;
+  }
+  .about .content-wrapper .about-heading {
+    font-size: 2.1rem;
+  }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1199px) {
+  .about .content-wrapper {
+    right: 60px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
