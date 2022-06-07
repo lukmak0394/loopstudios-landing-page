@@ -392,9 +392,13 @@ section {
 .main-nav .container .navbar .nav-item .nav-link {
   padding: 10px 20px;
   color: white;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  position: relative;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  border-bottom: 2px solid transparent;
+}
+
+.main-nav .container .navbar .nav-item .nav-link:hover {
+  border-bottom: 2px solid white;
 }
 
 .main-nav .container .menu-icon {
@@ -427,6 +431,7 @@ section {
     position: absolute;
     top: 200px;
     left: 0;
+    padding: 0 20px;
     width: 960px;
     text-align: left;
   }
@@ -468,6 +473,10 @@ section {
   }
 }
 
+.nav-opaque-black {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -495,5 +504,36 @@ header .overlay {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
+}
+
+header .main-heading {
+  position: absolute;
+  bottom: 20px;
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+  z-index: 2;
+  padding: 20px;
+  width: 50%;
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  border: 1px solid white;
+}
+
+@media screen and (max-width: 767px) {
+  header .main-heading {
+    font-size: 2.2rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  header .container {
+    width: 100%;
+    padding: 0 20px;
+  }
+  header .main-heading {
+    position: unset;
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

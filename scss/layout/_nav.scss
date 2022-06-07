@@ -19,8 +19,12 @@
                 .nav-link {
                     padding: 10px 20px;
                     color: $primary-white;
-                    transition: all 0.3s;
-                    position: relative;
+                    transition: all 0.2s;
+                    border-bottom: 2px solid transparent;
+                }
+
+                .nav-link:hover {
+                    border-bottom: 2px solid $primary-white;
                 }
             
             }
@@ -62,6 +66,7 @@
                 position: absolute;
                 top: 200px;
                 left: 0;
+                padding: 0 20px;
                 
                 width: 960px;
                 text-align: left;
@@ -79,7 +84,10 @@
                         font-size: 1.3rem;
                         text-transform: uppercase;
                     }
+
                 }
+
+                
             }
 
             .menu-icon {
@@ -104,10 +112,15 @@
             padding: 0 20px;
             text-align: center;
         }
+
     }
 
     .navbar-bg-black {
         background-color: #000;
     }
+}
+
+.nav-opaque-black {
+    background-color: rgba(0,0,0,0.8);
 }
 
