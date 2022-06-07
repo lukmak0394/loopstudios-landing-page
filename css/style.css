@@ -285,7 +285,7 @@ section {
 @media screen and (max-width: 767px) {
   .container {
     width: 100%;
-    padding: 0 30px;
+    padding: 0 20px;
   }
 }
 
@@ -392,6 +392,9 @@ section {
 .main-nav .container .navbar .nav-item .nav-link {
   padding: 10px 20px;
   color: white;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  position: relative;
 }
 
 .main-nav .container .menu-icon {
@@ -401,102 +404,67 @@ section {
   border-radius: none;
 }
 
+@media screen and (max-width: 768px) {
+  .main-nav .container .navbar {
+    width: 100%;
+    padding: 0 20px;
+  }
+}
+
 @media screen and (max-width: 992px) {
   .main-nav .container .navbar {
     display: none;
   }
-  .main-nav .container .navbar-opened,
+  .main-nav .container .logo,
+  .main-nav .container .menu-icon {
+    z-index: 15;
+  }
   .main-nav .container .navbar-closed {
-    display: block;
-    position: absolute;
-    margin: auto;
-    padding: 10px;
-    width: 60%;
-    text-align: left;
-    -webkit-animation-duration: 0.4s;
-            animation-duration: 0.4s;
-    background-color: turquoise;
-  }
-  .main-nav .container .navbar-opened .nav-item,
-  .main-nav .container .navbar-closed .nav-item {
-    padding: 5px 0;
-  }
-  .main-nav .container .navbar-opened .nav-item .nav-link,
-  .main-nav .container .navbar-closed .nav-item .nav-link {
-    margin-right: 0;
-    display: block;
-    width: 100%;
-    margin: auto;
-    text-transform: uppercase;
+    display: none;
   }
   .main-nav .container .navbar-opened {
-    top: 90px;
+    display: block;
+    position: absolute;
+    top: 200px;
     left: 0;
-    -webkit-animation-name: show;
-            animation-name: show;
+    width: 960px;
+    text-align: left;
   }
-  .main-nav .container .navbar-closed {
-    top: 90px;
-    left: -100%;
-    -webkit-animation-name: hide;
-            animation-name: hide;
-    -webkit-animation-duration: 0.4s;
-            animation-duration: 0.4s;
+  .main-nav .container .navbar-opened .nav-item {
+    padding: 5px 0;
   }
-  .main-nav .container .navbar-closed .nav-item {
-    padding: 15px 0;
-  }
-  .main-nav .container .navbar-closed .nav-item .nav-link {
+  .main-nav .container .navbar-opened .nav-item .nav-link {
     margin-right: 0;
+    padding: 5px 0;
     display: block;
     width: 100%;
     margin: auto;
-    font-size: 20px;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1.3rem;
     text-transform: uppercase;
-  }
-  @-webkit-keyframes show {
-    0% {
-      left: -100%;
-      opacity: 0;
-    }
-    100% {
-      left: 0px;
-      opacity: 1;
-    }
-  }
-  @keyframes show {
-    0% {
-      left: -100%;
-      opacity: 0;
-    }
-    100% {
-      left: 0px;
-      opacity: 1;
-    }
-  }
-  @-webkit-keyframes hide {
-    0% {
-      left: 0;
-      opacity: 1;
-    }
-    100% {
-      left: -100%;
-      opacity: 0;
-    }
-  }
-  @keyframes hide {
-    0% {
-      left: 0;
-      opacity: 1;
-    }
-    100% {
-      left: -100%;
-      opacity: 0;
-    }
   }
   .main-nav .container .menu-icon {
     margin-left: auto;
     display: block;
+    color: white;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .main-nav {
+    top: 0;
+    height: 100vh;
+    padding: 30px 0;
+  }
+  .main-nav .container {
+    position: absolute;
+    top: 30px;
+    width: 100%;
+    padding: 0 20px;
+    text-align: center;
+  }
+  .navbar-bg-black {
+    background-color: #000;
   }
 }
 

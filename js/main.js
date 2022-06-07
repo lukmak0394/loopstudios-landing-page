@@ -1,24 +1,24 @@
-const menuIcon = document.querySelector('.menu-icon');
 
+const navBtn = document.querySelector('.menu-icon');
 const navBar = document.querySelector('.navbar');
+const mainNav = document.querySelector('.main-nav');
 
-menuIcon.addEventListener('click',function() {
-    
-
-    const menuIconInner = menuIcon.children[0]
-    // Check if navbar by default is opened. 
-    // If yes  - remove class open, add class close (show and hide animation), change icon from X to hamburger.
-    // If not (else) - remove class close, add class open (show and hide animation), change icon from burger to X
+const toggleClasses = () => {
     if (navBar.classList.contains('navbar-opened')) {
         navBar.classList.remove('navbar-opened');
         navBar.classList.add('navbar-closed');
-        menuIconInner.classList.remove('fa-times');
-        menuIconInner.classList.add('fa-bars');
-    } else { 
-        navBar.classList.remove('navbar-closed');
+        // Class of icon 
+        navBtn.children[0].classList.remove('fa-times');
+        navBtn.children[0].classList.add('fa-bars');
+        mainNav.classList.remove('navbar-bg-black');
+    } else {
         navBar.classList.add('navbar-opened');
-        menuIconInner.classList.remove('fa-bars');
-        menuIconInner.classList.add('fa-times');
+        navBar.classList.remove('navbar-closed');
+        navBtn.children[0].classList.add('fa-times');
+        navBtn.children[0].classList.remove('fa-bars');
+        mainNav.classList.add('navbar-bg-black');
     }
-});
+};
+
+navBtn.addEventListener('click',toggleClasses);
 
