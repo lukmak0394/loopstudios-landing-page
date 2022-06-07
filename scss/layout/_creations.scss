@@ -1,0 +1,63 @@
+.creations {
+    position: relative;
+
+    .section-header {
+        font-family: $font-secondary;
+        font-weight: 300;
+        text-transform: uppercase;
+        font-size: 3.2rem;
+        line-height: 100%;
+    }
+
+    .btn {
+        width: 157px;
+        height: 40px;
+        border: 1px solid #000;
+        border-radius: 0;
+        background-color: transparent;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        font-size: 14px;
+        line-height: 14px;
+        transition: all 0.3s;
+    }
+
+    .btn:hover{
+        background-color: #000;
+        color: $primary-white;
+    }
+
+    .container:first-of-type {
+        align-items: center;
+        justify-content: space-between;
+    }
+
+
+    @media screen and (max-width: 767px) {
+
+        .section-header {
+            text-align: center;
+            font-size: 2.1rem;
+            line-height: 100%;
+        }
+
+        .container {
+            width: 100%;
+            padding: 0 20px;
+            margin-bottom: 20px;
+        }
+        
+        .section-header,
+        .btn {
+            margin: 0 auto;
+        }
+
+        .btn {
+            position: absolute;
+            bottom: 0px;
+            left: 25%;
+            right: 25%;;
+        }
+    }
+
+}

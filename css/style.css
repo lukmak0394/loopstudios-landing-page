@@ -607,4 +607,67 @@ header .main-heading {
     right: 60px;
   }
 }
+
+.creations {
+  position: relative;
+}
+
+.creations .section-header {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 3.2rem;
+  line-height: 100%;
+}
+
+.creations .btn {
+  width: 157px;
+  height: 40px;
+  border: 1px solid #000;
+  border-radius: 0;
+  background-color: transparent;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 14px;
+  line-height: 14px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.creations .btn:hover {
+  background-color: #000;
+  color: white;
+}
+
+.creations .container:first-of-type {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media screen and (max-width: 767px) {
+  .creations .section-header {
+    text-align: center;
+    font-size: 2.1rem;
+    line-height: 100%;
+  }
+  .creations .container {
+    width: 100%;
+    padding: 0 20px;
+    margin-bottom: 20px;
+  }
+  .creations .section-header,
+  .creations .btn {
+    margin: 0 auto;
+  }
+  .creations .btn {
+    position: absolute;
+    bottom: 0px;
+    left: 25%;
+    right: 25%;
+  }
+}
 /*# sourceMappingURL=style.css.map */
