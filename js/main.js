@@ -21,13 +21,3 @@ const toggleClasses = () => {
 };
 
 navBtn.addEventListener('click',toggleClasses);
-
-const navOpacityChange = () => {
-    if (window.scrollY >= 300) {
-        mainNav.classList.add('nav-opaque-black');  
-    } else {
-        mainNav.classList.remove('nav-opaque-black');
-    }
-}
-
-window.addEventListener('scroll',navOpacityChange);
