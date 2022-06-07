@@ -10,7 +10,8 @@
         "../scss/base/_grid.scss",
         "../scss/layout/_nav.scss",
         "../scss/layout/_header.scss",
-        "../scss/layout/_about.scss"
+        "../scss/layout/_about.scss",
+        "../scss/layout/_creations.scss"
     ],
     "names": [],
     "file": "style.css"
