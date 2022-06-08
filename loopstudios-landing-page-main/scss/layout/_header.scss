@@ -1,9 +1,0 @@
-header {
-    @include flexbox;
-    @include flex-center;
-    height: 100vh;
-    background-image: url('/images/desktop/image-hero.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
