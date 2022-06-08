@@ -445,7 +445,7 @@ section {
     width: 100%;
     margin: auto;
     font-family: "Josefin Sans", sans-serif;
-    font-size: 1.3rem;
+    font-size: 19.5px;
     text-transform: uppercase;
   }
   .main-nav .container .menu-icon {
@@ -514,7 +514,7 @@ header .main-heading {
   z-index: 2;
   padding: 20px;
   width: 50%;
-  font-size: 4rem;
+  font-size: 60px;
   text-transform: uppercase;
   font-weight: 300;
   border: 1px solid white;
@@ -522,7 +522,7 @@ header .main-heading {
 
 @media screen and (max-width: 767px) {
   header .main-heading {
-    font-size: 2.2rem;
+    font-size: 33px;
   }
 }
 
@@ -572,7 +572,7 @@ header .main-heading {
 .about .content-wrapper .about-heading {
   font-family: "Josefin Sans", sans-serif;
   text-transform: uppercase;
-  font-size: 3.2rem;
+  font-size: 48px;
   font-weight: 300;
 }
 
@@ -598,7 +598,7 @@ header .main-heading {
     margin-top: 30px;
   }
   .about .content-wrapper .about-heading {
-    font-size: 2.1rem;
+    font-size: 31.5px;
   }
 }
 
@@ -616,13 +616,12 @@ header .main-heading {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 300;
   text-transform: uppercase;
-  font-size: 3.2rem;
+  font-size: 48px;
   line-height: 100%;
 }
 
 .creations .btn {
-  width: 157px;
-  height: 40px;
+  padding: 15px 30px;
   border: 1px solid #000;
   border-radius: 0;
   background-color: transparent;
@@ -630,6 +629,7 @@ header .main-heading {
   letter-spacing: 5px;
   font-size: 14px;
   line-height: 14px;
+  text-align: center;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
@@ -637,6 +637,7 @@ header .main-heading {
 .creations .btn:hover {
   background-color: #000;
   color: white;
+  cursor: pointer;
 }
 
 .creations .container:first-of-type {
@@ -648,10 +649,80 @@ header .main-heading {
           justify-content: space-between;
 }
 
-@media screen and (max-width: 767px) {
+.creations .container:last-of-type {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.creations .creation {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  height: 450px;
+  width: 22%;
+  margin-bottom: 40px;
+}
+
+.creations .creation .creation-title {
+  position: absolute;
+  bottom: 25px;
+  left: 25px;
+  font-size: 31.5px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  margin: 0;
+}
+
+.creations .creation .creation-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: inherit;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.creations #deep-earth {
+  background-image: url("../images/desktop/image-deep-earth.jpg");
+}
+
+.creations #night-arcade {
+  background-image: url("../images/desktop/image-night-arcade.jpg");
+}
+
+.creations #soccer-team {
+  background-image: url("../images/desktop/image-soccer-team.jpg");
+}
+
+.creations #the-grid {
+  background-image: url("../images/desktop/image-grid.jpg");
+}
+
+.creations #from-up-above {
+  background-image: url("../images/desktop/image-from-above.jpg");
+}
+
+.creations #pocket-borealis {
+  background-image: url("../images/desktop/image-pocket-borealis.jpg");
+}
+
+.creations #the-curiosity {
+  background-image: url("../images/desktop/image-curiosity.jpg");
+}
+
+.creations #make-it-fisheye {
+  background-image: url("../images/desktop/image-fisheye.jpg");
+}
+
+@media screen and (max-width: 992px) {
   .creations .section-header {
     text-align: center;
-    font-size: 2.1rem;
+    font-size: 31.5px;
     line-height: 100%;
   }
   .creations .container {
@@ -662,6 +733,41 @@ header .main-heading {
   .creations .section-header,
   .creations .btn {
     margin: 0 auto;
+  }
+  .creations .creation {
+    height: 120px;
+    margin-bottom: 24px;
+    margin-right: 0;
+    width: 100%;
+  }
+  .creations .creation .creation-title {
+    bottom: 10px;
+    left: 10px;
+    font-size: 24px;
+  }
+  .creations #deep-earth {
+    background-image: url("../images/mobile/image-deep-earth.jpg");
+  }
+  .creations #night-arcade {
+    background-image: url("../images/mobile/image-night-arcade.jpg");
+  }
+  .creations #soccer-team {
+    background-image: url("../images/mobile/image-soccer-team.jpg");
+  }
+  .creations #the-grid {
+    background-image: url("../images/mobile/image-grid.jpg");
+  }
+  .creations #from-up-above {
+    background-image: url("../images/mobile/image-from-above.jpg");
+  }
+  .creations #pocket-borealis {
+    background-image: url("../images/mobile/image-pocket-borealis.jpg");
+  }
+  .creations #the-curiosity {
+    background-image: url("../images/mobile/image-curiosity.jpg");
+  }
+  .creations #make-it-fisheye {
+    background-image: url("../images/mobile/image-fisheye.jpg");
   }
   .creations .btn {
     position: absolute;
