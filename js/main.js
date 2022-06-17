@@ -7,7 +7,7 @@ const toggleClasses = () => {
 
     navBar.classList.toggle('navbar-opened');
     mainNav.classList.toggle('navbar-bg-black');
-    navBtn.children[0].classList.toggle('fa-times')
+    navBtn.children[0].classList.toggle('fa-times');
 
 };
 
