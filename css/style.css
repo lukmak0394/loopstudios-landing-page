@@ -282,7 +282,7 @@ section {
   width: 100%;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 992px) {
   .container {
     width: 100%;
     padding: 0 20px;
@@ -423,9 +423,6 @@ section {
   .main-nav .container .menu-icon {
     z-index: 15;
   }
-  .main-nav .container .navbar-closed {
-    display: none;
-  }
   .main-nav .container .navbar-opened {
     display: block;
     position: absolute;
@@ -465,7 +462,6 @@ section {
     position: absolute;
     top: 30px;
     width: 100%;
-    padding: 0 20px;
     text-align: center;
   }
   .navbar-bg-black {
@@ -529,7 +525,6 @@ header .main-heading {
 @media screen and (max-width: 992px) {
   header .container {
     width: 100%;
-    padding: 0 20px;
   }
   header .main-heading {
     position: unset;
@@ -584,7 +579,6 @@ header .main-heading {
 @media screen and (max-width: 992px) {
   .about .container {
     width: 100%;
-    padding: 0 20px;
   }
   .about .image-wrapper {
     background-image: url("../images/mobile/image-interactive.jpg");
@@ -727,7 +721,6 @@ header .main-heading {
   }
   .creations .container {
     width: 100%;
-    padding: 0 20px;
     margin-bottom: 20px;
   }
   .creations .section-header,
